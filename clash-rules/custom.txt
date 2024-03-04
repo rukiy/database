@@ -1,0 +1,3 @@
+payload:
+  - '+.lomcn.net'
+  - '+.playmods.net'
