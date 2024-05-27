@@ -1,3 +1,4 @@
 payload:
   - '+.lomcn.net'
   - '+.playmods.net'
+  - 'xxxxx520.cam'
