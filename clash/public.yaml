@@ -40,9 +40,7 @@ proxy-providers:
 
 # 策略组
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [🌏 WARP,🤖 Workers, 📢 公共]}
-
-  - {name: 🌏 WARP, type: load-balance, lazy: true, strategy: consistent-hashing, use: [🛫 WARP]}
+  - {name: 🚀 节点选择, type: select, proxies: [🤖 Workers, 📢 公共]}
   - {name: 🤖 Workers, type: load-balance, lazy: true, strategy: consistent-hashing, use: [🛫 Workers]}
   - {name: 📢 公共, type: url-test, lazy: true, use: [🛫 公共机场 1, 🛫 公共机场 2, 🛫 公共机场 3, 🛫 公共机场 4, 🛫 公共机场 5]}
   
