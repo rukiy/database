@@ -1,4 +1,4 @@
-dns: {enable: true, listen: 0.0.0.0:1053, ipv6: true, enhanced-mode: fake-ip, fake-ip-filter: ['*', '+.lan', '+.local'], nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query'], proxy-server-nameserver: ['https://doh.pub/dns-query'], nameserver-policy: {'geosite:cn,private:': ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query'], 'geosite:geolocation-!cn:': ['https://dns.cloudflare.com/dns-query#dns', 'https://dns.google/dns-query#dns']}}
+dns: {enable: true, listen: 0.0.0.0:1053, ipv6: true, enhanced-mode: fake-ip, fake-ip-filter: ['*', '+.lan', '+.local'], nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query'], proxy-server-nameserver: ['https://doh.pub/dns-query'], nameserver-policy: {'geosite:cn,private:': ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']}}
 cfw-bypass: ['localhost', '127.*', '10.*', '172.16.*', '172.17.*', '172.18.*', '172.19.*', '172.20.*', '172.21.*', '172.22.*', '172.23.*', '172.24.*', '172.25.*', '172.26.*', '172.27.*', '172.28.*', '172.29.*', '172.30.*', '172.31.*', '192.168.*', '<local>']
 
 # 代理集合（获取机场订阅链接内的所有节点）
